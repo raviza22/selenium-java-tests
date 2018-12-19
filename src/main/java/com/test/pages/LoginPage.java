@@ -3,23 +3,28 @@ package com.test.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.test.base.TestBase;
 
 public class LoginPage extends TestBase{
 	
 	// Page Factory - OR
-	@FindBy(id="UserType")
-	WebElement usertype;
-	@FindBy (id="Username")
+	
+	@FindBy (name="username")
 	WebElement username;
-	@FindBy (id="Password")
+	@FindBy (name="password")
 	WebElement password;
-	@FindBy (id="loginButton")
+	
+	@FindBy (xpath = "//input[@type='submit']")
 	WebElement loginButton;
 	
-	@FindBy (id="logo")
+	@FindBy (xpath="//*[contains(@class, 'img-responsive')]")
 	WebElement logo;
+	
+	@FindBy (id="preloader")
+	WebElement preloader;
+	
 	// Initializing the page objects using page factory
 	public LoginPage(){
 		PageFactory.initElements(driver, this);
@@ -27,16 +32,17 @@ public class LoginPage extends TestBase{
 	
 	// Page actions
 	public String validateLoginPageTitle(){
-		
+		wait.until(ExpectedConditions.invisibilityOf(preloader));
 		return driver.getTitle();
 	}
 	
 	public boolean validateLogo(){
+		wait.until(ExpectedConditions.invisibilityOf(preloader));
 		return logo.isDisplayed();
 	}
 	
-	public HomePage login(String type, String user, String pass){
-		usertype.sendKeys(type);
+	public HomePage login(String user, String pass){
+		wait.until(ExpectedConditions.invisibilityOf(preloader));
 		username.sendKeys(user);
 		password.sendKeys(pass);
 		loginButton.click();

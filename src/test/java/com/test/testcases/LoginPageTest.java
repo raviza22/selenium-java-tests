@@ -29,7 +29,7 @@ public class LoginPageTest extends TestBase{
 	@Test(priority=1)
 	public void loginPageTitleTest(){
 		String title = loginPage.validateLoginPageTitle();
-		Assert.assertEquals(title, "Login");
+		Assert.assertEquals(title, "#1 Free CRM software in the cloud for sales and service");
 	}
 	
 	@Test(priority=2)
@@ -40,7 +40,7 @@ public class LoginPageTest extends TestBase{
 	
 	@Test(priority=3)
 	public void loginTest(){
-		homePage = loginPage.login(prop.getProperty("usertype"), prop.getProperty("username"), prop.getProperty("password"));
+		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		
 	}
 	
