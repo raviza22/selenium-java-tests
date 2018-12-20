@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20178" started-at="2018-12-19T14:25:53Z" finished-at="2018-12-19T14:26:13Z">
+  <suite name="Test Framework Test Suite" duration-ms="22273" started-at="2018-12-20T12:32:16Z" finished-at="2018-12-20T12:32:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20178" started-at="2018-12-19T14:25:53Z" finished-at="2018-12-19T14:26:13Z">
-      <class name="com.test.testcases.HomePageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.testcases.HomePageTest@42e26948]" name="setup" is-config="true" duration-ms="19366" started-at="2018-12-19T14:25:53Z" finished-at="2018-12-19T14:26:12Z">
+    <test name="Test Framework Test" duration-ms="22273" started-at="2018-12-20T12:32:16Z" finished-at="2018-12-20T12:32:38Z">
+      <class name="com.test.testcases.ContactsPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.testcases.ContactsPageTest@343f4d3d]" name="setup" is-config="true" duration-ms="20300" started-at="2018-12-20T12:32:16Z" finished-at="2018-12-20T12:32:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyContactsLinkTest()[pri:3, instance:com.test.testcases.HomePageTest@42e26948]" name="verifyContactsLinkTest" duration-ms="132" started-at="2018-12-19T14:26:12Z" finished-at="2018-12-19T14:26:12Z">
+        <test-method status="PASS" signature="selectMultipleContactsTest()[pri:3, instance:com.test.testcases.ContactsPageTest@343f4d3d]" name="selectMultipleContactsTest" duration-ms="1287" started-at="2018-12-20T12:32:36Z" finished-at="2018-12-20T12:32:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyContactsLinkTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.test.testcases.HomePageTest@42e26948]" name="teardown" is-config="true" duration-ms="658" started-at="2018-12-19T14:26:12Z" finished-at="2018-12-19T14:26:13Z">
+        </test-method> <!-- selectMultipleContactsTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.test.testcases.ContactsPageTest@343f4d3d]" name="teardown" is-config="true" duration-ms="665" started-at="2018-12-20T12:32:37Z" finished-at="2018-12-20T12:32:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.test.testcases.HomePageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.test.testcases.ContactsPageTest -->
+    </test> <!-- Test Framework Test -->
+  </suite> <!-- Test Framework Test Suite -->
 </testng-results>
