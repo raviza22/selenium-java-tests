@@ -5,7 +5,8 @@
     <classes>
       <class name="com.test.testcases.ContactsPageTest">
         <methods>
-          <include name="selectMultipleContactsTest"/>
+          <include name="validateCreateNewContact"/>
+          <include name="teardown"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.test.testcases.ContactsPageTest -->

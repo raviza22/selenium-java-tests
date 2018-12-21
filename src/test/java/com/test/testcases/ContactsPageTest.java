@@ -3,6 +3,7 @@ package com.test.testcases;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.test.base.TestBase;
@@ -17,6 +18,8 @@ public class ContactsPageTest extends TestBase {
 	HomePage homePage;
 	TestUtil testUtil;
 	ContactsPage contactsPage;
+	
+	String sheetName = "contacts";
 	
 	public ContactsPageTest(){
 		super();   				//initializes the properties file from the test base class constructor
@@ -52,6 +55,20 @@ public class ContactsPageTest extends TestBase {
 		contactsPage.selectContactsByName("test2 test2");
 	}
 	
+	@DataProvider
+	public Object[][] getData(){
+		Object data[][] = TestUtil.getTestData(sheetName);
+		return data;
+		
+	}
+	
+	@Test(priority=4, dataProvider="getData")
+	public void createNewContactTest(String title, String firstname, String lastname, String company){
+		homePage.clickOnNewContactLink();
+		contactsPage.validateCreateNewContact(title, firstname, lastname, company);
+		
+		//contactsPage.createNewContact("Mr.", "test3", "test3", "google");
+	}
 	
 	@AfterMethod
 	public void teardown(){

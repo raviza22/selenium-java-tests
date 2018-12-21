@@ -1,25 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="3" total="6" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Test Framework Test Suite" duration-ms="22273" started-at="2018-12-20T12:32:16Z" finished-at="2018-12-20T12:32:38Z">
+  <suite name="Default suite" duration-ms="99098" started-at="2018-12-21T10:40:48Z" finished-at="2018-12-21T10:42:27Z">
     <groups>
     </groups>
-    <test name="Test Framework Test" duration-ms="22273" started-at="2018-12-20T12:32:16Z" finished-at="2018-12-20T12:32:38Z">
+    <test name="Default test" duration-ms="99098" started-at="2018-12-21T10:40:48Z" finished-at="2018-12-21T10:42:27Z">
       <class name="com.test.testcases.ContactsPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.testcases.ContactsPageTest@343f4d3d]" name="setup" is-config="true" duration-ms="20300" started-at="2018-12-20T12:32:16Z" finished-at="2018-12-20T12:32:36Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.testcases.ContactsPageTest@1a968a59]" name="setup" is-config="true" duration-ms="31491" started-at="2018-12-21T10:40:49Z" finished-at="2018-12-21T10:41:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="selectMultipleContactsTest()[pri:3, instance:com.test.testcases.ContactsPageTest@343f4d3d]" name="selectMultipleContactsTest" duration-ms="1287" started-at="2018-12-20T12:32:36Z" finished-at="2018-12-20T12:32:37Z">
+        <test-method status="PASS" signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.test.testcases.ContactsPageTest@1a968a59]" name="validateCreateNewContact" duration-ms="1743" started-at="2018-12-21T10:41:20Z" data-provider="getData" finished-at="2018-12-21T10:41:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mr.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test4]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[microsoft]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectMultipleContactsTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.test.testcases.ContactsPageTest@343f4d3d]" name="teardown" is-config="true" duration-ms="665" started-at="2018-12-20T12:32:37Z" finished-at="2018-12-20T12:32:38Z">
+        </test-method> <!-- validateCreateNewContact -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.test.testcases.ContactsPageTest@1a968a59]" name="teardown" is-config="true" duration-ms="665" started-at="2018-12-21T10:41:22Z" finished-at="2018-12-21T10:41:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.testcases.ContactsPageTest@1a968a59]" name="setup" is-config="true" duration-ms="29829" started-at="2018-12-21T10:41:23Z" finished-at="2018-12-21T10:41:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.test.testcases.ContactsPageTest@1a968a59]" name="validateCreateNewContact" duration-ms="1882" started-at="2018-12-21T10:41:52Z" data-provider="getData" finished-at="2018-12-21T10:41:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dr.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test5]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[amazon]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateNewContact -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.test.testcases.ContactsPageTest@1a968a59]" name="teardown" is-config="true" duration-ms="666" started-at="2018-12-21T10:41:54Z" finished-at="2018-12-21T10:41:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.testcases.ContactsPageTest@1a968a59]" name="setup" is-config="true" duration-ms="29596" started-at="2018-12-21T10:41:55Z" finished-at="2018-12-21T10:42:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.test.testcases.ContactsPageTest@1a968a59]" name="validateCreateNewContact" duration-ms="1721" started-at="2018-12-21T10:42:25Z" data-provider="getData" finished-at="2018-12-21T10:42:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Miss]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test6]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[facebook]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateNewContact -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.test.testcases.ContactsPageTest@1a968a59]" name="teardown" is-config="true" duration-ms="652" started-at="2018-12-21T10:42:26Z" finished-at="2018-12-21T10:42:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.test.testcases.ContactsPageTest -->
-    </test> <!-- Test Framework Test -->
-  </suite> <!-- Test Framework Test Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

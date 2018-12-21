@@ -5,8 +5,8 @@
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class name="com.test.testcases.LoginPageTest" />
-			<class name="com.test.testcases.HomePageTest" />
-			<class name="com.test.testcases.ContactsPageTest" />
+		<!--	<class name="com.test.testcases.HomePageTest" />
+			<class name="com.test.testcases.ContactsPageTest" /> -->
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
