@@ -1,6 +1,7 @@
 package com.test.pages;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -12,17 +13,21 @@ public class LoginPage extends TestBase{
 	// Page Factory - OR
 	
 	@FindBy (name="username")
+	@CacheLookup
 	WebElement username;
 	@FindBy (name="password")
+	@CacheLookup
 	WebElement password;
 	
 	@FindBy (xpath = "//input[@type='submit']")
+	@CacheLookup
 	WebElement loginButton;
 	
 	@FindBy (xpath="//img[contains(@class, 'img-responsive')]")
 	WebElement logo;
 	
 	@FindBy (id="preloader")
+	@CacheLookup
 	WebElement preloader;
 	
 	// Initializing the page objects using page factory
