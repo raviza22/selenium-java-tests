@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Test Framework Test Suite]">
+  <test thread-count="5" name="Test Framework Test(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.test.testcases.ContactsPageTest">
+      <class name="com.test.testcases.LoginPageTest">
         <methods>
-          <include name="validateCreateNewContact"/>
-          <include name="teardown"/>
           <include name="setup"/>
+          <include name="loginTest"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- com.test.testcases.ContactsPageTest -->
+      </class> <!-- com.test.testcases.LoginPageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test Framework Test(failed) -->
+</suite> <!-- Failed suite [Test Framework Test Suite] -->
