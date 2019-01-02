@@ -6,6 +6,7 @@
       <class name="com.test.testcases.HomePageTest">
         <methods>
           <include name="teardown"/>
+          <include name="verifyContactsLinkTest"/>
           <include name="setup"/>
           <include name="verifyUsernameTest"/>
         </methods>
