@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Framework Test Suite">
+	<test name="Test Framework Test">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.test.testcases.LoginPageTest" />
+		<!--	<class name="com.test.testcases.HomePageTest" />
+			<class name="com.test.testcases.ContactsPageTest" /> -->
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
