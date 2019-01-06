@@ -60,7 +60,7 @@ public class TestUtil extends TestBase{
 		
 		}
 	
-	public static void takeScreenshotAtEndOfTest() throws IOException{
+	public static void takeScreenshot() throws IOException{
 		
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String currentDir = System.getProperty("user.dir");

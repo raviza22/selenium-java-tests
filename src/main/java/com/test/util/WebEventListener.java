@@ -63,59 +63,59 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	public void onException(Throwable error, WebDriver driver) {
 		System.out.println("Exception occured " + error);
 	try{
-			TestUtil.takeScreenshotAtEndOfTest();
+			TestUtil.takeScreenshot();
 			}catch(IOException e){
 				e.printStackTrace();
 			}
 			
 	}
 	public void afterAlertAccept(WebDriver driver) {
-		// TODO Auto-generated method stub
+		System.out.println("Alert accepted");
 
 	}
 
 	public void afterAlertDismiss(WebDriver driver) {
-		// TODO Auto-generated method stub
+		System.out.println("Alert dismissed");
 
 	}
 	public void afterNavigateRefresh(WebDriver driver) {
-		// TODO Auto-generated method stub
+		System.out.println("Page refreshed");
 
 	}
 
 
-	public void afterScript(String arg0, WebDriver driver) {
+	public void afterScript(String s, WebDriver driver) {
 		// TODO Auto-generated method stub
 
 	}
 
-	public void afterSwitchToWindow(String arg0, WebDriver driver) {
-		// TODO Auto-generated method stub
+	public void afterSwitchToWindow(String url, WebDriver driver) {
+		System.out.println("Switched to window: " + url);
 
 	}
 
 	public void beforeAlertAccept(WebDriver driver) {
-		// TODO Auto-generated method stub
+		System.out.println("Before accepting alert");
 
 	}
 
 	public void beforeAlertDismiss(WebDriver driver) {
-		// TODO Auto-generated method stub
+		System.out.println("Before dismissing alert");
 
 	}
 
 	public void beforeNavigateRefresh(WebDriver driver) {
+		System.out.println("Before page refresh");
+
+	}
+
+	public void beforeScript(String s, WebDriver driver) {
 		// TODO Auto-generated method stub
 
 	}
 
-	public void beforeScript(String arg0, WebDriver driver) {
-		// TODO Auto-generated method stub
-
-	}
-
-	public void beforeSwitchToWindow(String arg0, WebDriver driver) {
-		// TODO Auto-generated method stub
+	public void beforeSwitchToWindow(String url, WebDriver driver) {
+		System.out.println("Before switching to window: " + url);
 
 	}
 
