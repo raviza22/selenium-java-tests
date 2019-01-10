@@ -1,5 +1,6 @@
 package com.test.testcases;
 
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -13,6 +14,7 @@ public class LoginPageTest extends TestBase{
 	
 	LoginPage loginPage;
 	HomePage homePage;
+	
 	
 	public LoginPageTest(){
 		super();   				//initializes the properties file from the test base class constructor
@@ -28,6 +30,7 @@ public class LoginPageTest extends TestBase{
 	
 	//@Test(priority=1)
 	public void loginPageTitleTest(){
+		
 		String title = loginPage.validateLoginPageTitle();
 		Assert.assertEquals(title, "#1 Free CRM software in the cloud for sales and service");
 	}

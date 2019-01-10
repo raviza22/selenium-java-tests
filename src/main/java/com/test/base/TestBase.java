@@ -1,3 +1,9 @@
+/*
+ * 
+ * author Raviza
+ * 
+ */
+
 package com.test.base;
 
 import java.io.FileInputStream;
@@ -6,12 +12,14 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.test.testcases.LoginPageTest;
 import com.test.util.TestUtil;
 import com.test.util.WebEventListener;
 
@@ -22,6 +30,7 @@ public class TestBase {
 	public static WebDriverWait wait;
 	public static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
+	public static Logger log = Logger.getLogger(TestBase.class);
 
 	public TestBase(){
 
@@ -41,11 +50,12 @@ public class TestBase {
 		if (browserName.equalsIgnoreCase("chrome")){
 			System.setProperty("webdriver.chrome.driver", "C:\\gecko\\chromedriver.exe");
 			driver = new ChromeDriver();
-			
+			log.info("********************* launching chrome browser *********************");
 		}
 		else if(browserName.equalsIgnoreCase("firefox")){
 			System.setProperty("webdriver.gecko.driver", "C:\\gecko\\geckodriver.exe");
 			driver = new FirefoxDriver();
+			log.info("********************* launching firefox browser *********************");
 		}
 	
 		
@@ -56,9 +66,13 @@ public class TestBase {
 		
 		//driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
+		log.info("********************* deleting cookies *********************");
+
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
+		log.info("********************* launching application url *********************");
+
 		wait = new WebDriverWait(driver, TestUtil.FLUENT_WAIT_TIMEOUT);
 	}
 
