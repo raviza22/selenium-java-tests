@@ -23,12 +23,15 @@ public class HomePage extends TestBase {
 
 	@FindBy (xpath="//a[text()='New Contact']")
 	WebElement newContactLink;
-	//Initializing the page objects using page factory
+	
+	@FindBy (xpath="//a[text()='New Deal']")
+	WebElement newDealLink;
+	
 	public HomePage(){
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(driver, this);   //Initializing the page objects using page factory
 	}
 	
-	//Actions
+	//Page Actions
 	
 	public String validateHomePageTitle(){
 		return driver.getTitle();
@@ -52,6 +55,12 @@ public class HomePage extends TestBase {
 	public DealsPage clickOnDealsLink(){
 		dealsLink.click();
 		return new DealsPage();
+	}
+	
+	public void clickOnNewDealLink() {
+		Actions action = new Actions(driver);
+		action.moveToElement(dealsLink).build().perform();
+		newDealLink.click();
 	}
 
 	public TasksPage clickOnTasksLink(){
