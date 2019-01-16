@@ -66,8 +66,6 @@ public class ContactsPageTest extends TestBase {
 	public void createNewContactTest(String title, String firstname, String lastname, String company){
 		homePage.clickOnNewContactLink();
 		contactsPage.validateCreateNewContact(title, firstname, lastname, company);
-		
-		//contactsPage.createNewContact("Mr.", "test3", "test3", "google");
 	}
 	
 	@AfterMethod

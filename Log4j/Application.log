@@ -1,0 +1,30 @@
+2019-01-16 14:07:16,780  INFO [main] TestBase:53 - ********************* launching chrome browser *********************
+2019-01-16 14:07:16,971  INFO [main] TestBase:69 - ********************* deleting cookies *********************
+2019-01-16 14:07:21,647  INFO [main] TestBase:74 - ********************* launching application url *********************
+2019-01-16 14:07:34,200  INFO [main] TestBase:53 - ********************* launching chrome browser *********************
+2019-01-16 14:07:34,351  INFO [main] TestBase:69 - ********************* deleting cookies *********************
+2019-01-16 14:07:39,223  INFO [main] TestBase:74 - ********************* launching application url *********************
+2019-01-16 14:07:51,142  INFO [main] TestBase:53 - ********************* launching chrome browser *********************
+2019-01-16 14:07:51,328  INFO [main] TestBase:69 - ********************* deleting cookies *********************
+2019-01-16 14:07:56,225  INFO [main] TestBase:74 - ********************* launching application url *********************
+2019-01-16 14:08:07,155  INFO [main] TestBase:53 - ********************* launching chrome browser *********************
+2019-01-16 14:08:07,329  INFO [main] TestBase:69 - ********************* deleting cookies *********************
+2019-01-16 14:08:12,011  INFO [main] TestBase:74 - ********************* launching application url *********************
+2019-01-16 14:08:24,231  INFO [main] TestBase:53 - ********************* launching chrome browser *********************
+2019-01-16 14:08:24,423  INFO [main] TestBase:69 - ********************* deleting cookies *********************
+2019-01-16 14:08:29,589  INFO [main] TestBase:74 - ********************* launching application url *********************
+2019-01-16 14:08:40,884  INFO [main] TestBase:53 - ********************* launching chrome browser *********************
+2019-01-16 14:08:41,116  INFO [main] TestBase:69 - ********************* deleting cookies *********************
+2019-01-16 14:08:46,469  INFO [main] TestBase:74 - ********************* launching application url *********************
+2019-01-16 14:08:58,679  INFO [main] TestBase:53 - ********************* launching chrome browser *********************
+2019-01-16 14:08:58,782  INFO [main] TestBase:69 - ********************* deleting cookies *********************
+2019-01-16 14:09:04,397  INFO [main] TestBase:74 - ********************* launching application url *********************
+2019-01-16 14:17:00,807  INFO [main] TestBase:53 - ********************* launching chrome browser *********************
+2019-01-16 14:17:01,001  INFO [main] TestBase:69 - ********************* deleting cookies *********************
+2019-01-16 14:17:08,149  INFO [main] TestBase:74 - ********************* launching application url *********************
+2019-01-16 14:17:26,426  INFO [main] TestBase:53 - ********************* launching chrome browser *********************
+2019-01-16 14:17:26,603  INFO [main] TestBase:69 - ********************* deleting cookies *********************
+2019-01-16 14:17:32,121  INFO [main] TestBase:74 - ********************* launching application url *********************
+2019-01-16 14:17:49,383  INFO [main] TestBase:53 - ********************* launching chrome browser *********************
+2019-01-16 14:17:49,448  INFO [main] TestBase:69 - ********************* deleting cookies *********************
+2019-01-16 14:17:55,110  INFO [main] TestBase:74 - ********************* launching application url *********************

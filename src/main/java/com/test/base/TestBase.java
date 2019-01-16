@@ -30,7 +30,7 @@ public class TestBase {
 	public static WebDriverWait wait;
 	public static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
-	public static Logger log = Logger.getLogger(TestBase.class);
+	private static Logger log = Logger.getLogger(TestBase.class);
 
 	public TestBase(){
 
@@ -50,7 +50,7 @@ public class TestBase {
 		if (browserName.equalsIgnoreCase("chrome")){
 			System.setProperty("webdriver.chrome.driver", "C:\\gecko\\chromedriver.exe");
 			driver = new ChromeDriver();
-			log.info("********************* launching chrome browser *********************");
+		log.info("********************* launching chrome browser *********************");
 		}
 		else if(browserName.equalsIgnoreCase("firefox")){
 			System.setProperty("webdriver.gecko.driver", "C:\\gecko\\geckodriver.exe");
